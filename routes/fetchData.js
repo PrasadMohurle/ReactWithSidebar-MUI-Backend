@@ -1,7 +1,7 @@
 const fetching = require('express').Router();
 const poolReadyPromise = require('../db');
 
-//route for REGISTER
+//route for getting user data
 fetching.get('/getUserData', async (req, res) => {
     try {
         await poolReadyPromise; // Wait for the pool to be ready
